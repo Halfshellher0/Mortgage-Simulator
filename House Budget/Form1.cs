@@ -811,10 +811,5 @@ namespace House_Budget
             chart_DownpaymentCompare.ChartAreas[0].AxisY.Maximum = maxNetWorth;
 
         }
-
-        private void Chart_DownpaymentCompare_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

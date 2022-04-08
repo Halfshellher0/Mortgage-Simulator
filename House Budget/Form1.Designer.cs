@@ -28,9 +28,9 @@ namespace House_Budget
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.hs_RentalIncome = new System.Windows.Forms.HScrollBar();
             this.tb_RentalIncome = new System.Windows.Forms.TextBox();
@@ -210,7 +210,6 @@ namespace House_Budget
             this.hs_Income.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.hs_Income.Size = new System.Drawing.Size(289, 17);
             this.hs_Income.TabIndex = 55;
-            this.hs_Income.Value = 79693;
             this.hs_Income.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Hs_Income_Scroll);
             // 
             // hs_CurrentNetWorth
@@ -221,7 +220,6 @@ namespace House_Budget
             this.hs_CurrentNetWorth.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.hs_CurrentNetWorth.Size = new System.Drawing.Size(289, 17);
             this.hs_CurrentNetWorth.TabIndex = 54;
-            this.hs_CurrentNetWorth.Value = 116804;
             this.hs_CurrentNetWorth.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Hs_CurrentNetWorth_Scroll);
             // 
             // hs_OneTimePurchaseCost
@@ -298,7 +296,7 @@ namespace House_Budget
             this.hs_CostOfHouse.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.hs_CostOfHouse.Size = new System.Drawing.Size(289, 17);
             this.hs_CostOfHouse.TabIndex = 47;
-            this.hs_CostOfHouse.Value = 300000;
+            this.hs_CostOfHouse.Value = 700000;
             this.hs_CostOfHouse.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Hs_CostOfHouse_Scroll);
             // 
             // tb_OneTimePurchaseCost
@@ -453,7 +451,7 @@ namespace House_Budget
             this.tb_CostOfHouse.Name = "tb_CostOfHouse";
             this.tb_CostOfHouse.Size = new System.Drawing.Size(101, 20);
             this.tb_CostOfHouse.TabIndex = 6;
-            this.tb_CostOfHouse.Text = "300000";
+            this.tb_CostOfHouse.Text = "700000";
             this.tb_CostOfHouse.TextChanged += new System.EventHandler(this.Tb_CostOfHouse_TextChanged);
             // 
             // label3
@@ -471,7 +469,7 @@ namespace House_Budget
             this.tb_Income.Name = "tb_Income";
             this.tb_Income.Size = new System.Drawing.Size(101, 20);
             this.tb_Income.TabIndex = 4;
-            this.tb_Income.Text = "79693";
+            this.tb_Income.Text = "0";
             this.tb_Income.TextChanged += new System.EventHandler(this.Tb_Income_TextChanged);
             // 
             // label2
@@ -489,7 +487,7 @@ namespace House_Budget
             this.tb_CurrentNetWorth.Name = "tb_CurrentNetWorth";
             this.tb_CurrentNetWorth.Size = new System.Drawing.Size(101, 20);
             this.tb_CurrentNetWorth.TabIndex = 2;
-            this.tb_CurrentNetWorth.Text = "116804";
+            this.tb_CurrentNetWorth.Text = "0";
             this.tb_CurrentNetWorth.TextChanged += new System.EventHandler(this.Tb_CurrentNetWorth_TextChanged);
             // 
             // label1
@@ -694,25 +692,24 @@ namespace House_Budget
             // 
             // chart_DownpaymentCompare
             // 
-            chartArea1.AxisX.Title = "% Downpayment on House";
-            chartArea1.AxisY.Title = "Net Worth After Simulation";
-            chartArea1.Name = "ChartArea1";
-            this.chart_DownpaymentCompare.ChartAreas.Add(chartArea1);
+            chartArea2.AxisX.Title = "% Downpayment on House";
+            chartArea2.AxisY.Title = "Net Worth After Simulation";
+            chartArea2.Name = "ChartArea1";
+            this.chart_DownpaymentCompare.ChartAreas.Add(chartArea2);
             this.chart_DownpaymentCompare.Location = new System.Drawing.Point(29, 325);
             this.chart_DownpaymentCompare.Name = "chart_DownpaymentCompare";
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Name = "NetWorth";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Name = "RentOnlyLine";
-            this.chart_DownpaymentCompare.Series.Add(series1);
-            this.chart_DownpaymentCompare.Series.Add(series2);
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "NetWorth";
+            series4.BorderWidth = 3;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Name = "RentOnlyLine";
+            this.chart_DownpaymentCompare.Series.Add(series3);
+            this.chart_DownpaymentCompare.Series.Add(series4);
             this.chart_DownpaymentCompare.Size = new System.Drawing.Size(946, 553);
             this.chart_DownpaymentCompare.TabIndex = 1;
-            this.chart_DownpaymentCompare.Click += new System.EventHandler(this.Chart_DownpaymentCompare_Click);
             // 
             // dgv_SimulationReview
             // 
